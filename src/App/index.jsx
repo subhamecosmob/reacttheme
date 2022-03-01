@@ -1,8 +1,6 @@
 import React from "react";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import DashBoard from "../Dashboard";
-
 import { Grid, Box } from "@mui/material";
 import NavBar from "../NavBar";
 import Home from "../Home";
@@ -27,7 +25,7 @@ const App = () => {
 					</Grid>
 					<Grid item xs={true} sx={{ padding: "0rem 5rem" }}>
 						<Routes>
-							<Route path='/' element={<Home />} />
+							<Route path='' element={<Home />} />
 							<Route path='Users' element={<Users />} />
 						</Routes>
 					</Grid>
